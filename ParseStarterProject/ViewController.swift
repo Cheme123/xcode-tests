@@ -54,6 +54,7 @@ class ViewController: UIViewController {
             view.addSubview(activityIndicator)
             activityIndicator.startAnimating()
             UIApplication.shared.beginIgnoringInteractionEvents()
+            // activity indicator that shows users login process
             
             if signupMode {
                 
@@ -84,6 +85,7 @@ class ViewController: UIViewController {
                 
                 if validation {
                     user.username = correctFormatUserName
+                    // correctFormatUserName is username that is created if and ony if it has a valid format.
                     user.email = emailField.text
                     user.password = passwordField.text
                     
